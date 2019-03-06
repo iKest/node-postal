@@ -6,11 +6,11 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "-lpostal", "c:/msys64/home/Konstantin"
+                "-lpostal", "../../thrid_party"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "/usr/local/include"
+                "../../thrid_party/include"
             ]
         },
         {
@@ -23,7 +23,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "/usr/local/include"
+                "../../thrid_party/include"
             ]
         }
     ]
