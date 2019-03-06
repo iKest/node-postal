@@ -10,7 +10,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "../thrid_party/include"
+                "../../thrid_party/include"
             ]
         },
         {
@@ -23,7 +23,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "../thrid_party/include"
+                "../../thrid_party/include"
             ]
         }
     ]
