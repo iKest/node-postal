@@ -6,11 +6,10 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "-lpostal", "../thrid_party/lib"
+                "-lpostal", "../../../../thrid_party/lib"
             ],
             "include_dirs": [
-                "<!(node -e \"require('nan')\")",
-                "../../thrid_party/include"
+                "<!(node -e \"require('nan')\")"
             ]
         },
         {
@@ -19,11 +18,10 @@
                 "src/parser.cc"
             ],
             "libraries": [
-                "-lpostal", "../thrid_party/lib"
+                "-lpostal", "../../../thrid_party/lib"
             ],
             "include_dirs": [
-                "<!(node -e \"require('nan')\")",
-                "../../thrid_party/include"
+                "<!(node -e \"require('nan')\")"
             ]
         }
     ]
