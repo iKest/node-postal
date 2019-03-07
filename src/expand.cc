@@ -1,4 +1,6 @@
 #include <libpostal/libpostal.h>
+#include <node.h>
+#include <string.h>
 #include <nan.h>
 
 #define EXPAND_USAGE "Usage: expand_address(address, options)"
