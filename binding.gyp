@@ -6,7 +6,7 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "../../../thrid_party/lib"
+                "../thrid_party/lib"
                
             ],
             "include_dirs": [
@@ -24,7 +24,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "../thrid_party/include"
+                "../../thrid_party/include"
             ]
         }
     ]
