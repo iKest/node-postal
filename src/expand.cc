@@ -114,8 +114,7 @@ NAN_METHOD(ExpandAddress) {
     if (languages != NULL) {
         free(languages);
     }
-    Nan::ThrowTypeError("Could not");
-        return;
+ 
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
@@ -123,6 +122,8 @@ NAN_METHOD(ExpandAddress) {
         ret->Set(i, e);
         free(expansions[i]);
     }
+    Nan::ThrowTypeError("Could not");
+        return;
     free(expansions);
 
     info.GetReturnValue().Set(ret);
