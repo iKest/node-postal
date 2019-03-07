@@ -5,14 +5,10 @@
             "sources": [
                 "src/expand.cc"
             ],
-            "libraries": [
-                "-lC:/msys64/home/Konstantin/libpostal/libpostal.lib"
-                
-               
-            ],
+            "libraries": ["C:/msys64/mingw64/lib/libpostal.a"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                 "C:/msys64/home/Konstantin/libpostal"
+                 "C:/msys64/mingw64/include"
             ]
         },
         {
@@ -20,13 +16,10 @@
             "sources": [
                 "src/parser.cc"
             ],
-            "libraries": [
-                "-lC:/msys64/home/Konstantin/libpostal/libpostal.lib"
-                
-            ],
+            "libraries": ["C:/msys64/mingw64/lib/libpostal.a"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "C:/msys64/home/Konstantin/libpostal"
+                "C:/msys64/mingw64/include"
             ]
         }
     ]
