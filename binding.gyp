@@ -7,7 +7,7 @@
             ],
             "libraries": [
                 "-lC:/msys64/home/Konstantin/libpostal/libpostal.lib",
-                "C:/msys64/home/Konstantin/libpostal"
+                "C:/msys64/home/Konstantin/libpostal/"
                
             ],
             "include_dirs": [
@@ -22,7 +22,7 @@
             ],
             "libraries": [
                 "-lC:/msys64/home/Konstantin/libpostal/libpostal.lib",
-                "C:/msys64/home/Konstantin/libpostal"
+                "C:/msys64/home/Konstantin/libpostal/"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
