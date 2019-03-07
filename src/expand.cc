@@ -1,6 +1,5 @@
 #include <src/libpostal.h>
 #include <nan.h>
-#include <string>
 
 #define EXPAND_USAGE "Usage: expand_address(address, options)"
 
