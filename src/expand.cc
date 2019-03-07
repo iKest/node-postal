@@ -121,7 +121,7 @@ NAN_METHOD(ExpandAddress) {
     for (i = 0; i < num_expansions; i++) {
         printf("%I32u\n",i);
         printf(expansions[i]);
-        free(expansions[i]);
+        
     }
     Nan::ThrowError("Could not load libpostal");
         return;
