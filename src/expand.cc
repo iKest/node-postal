@@ -3,6 +3,9 @@
 #include <string.h>
 #include <nan.h>
 
+using namespace Nan;
+using namespace v8;
+
 #define EXPAND_USAGE "Usage: expand_address(address, options)"
 
 NAN_METHOD(ExpandAddress) {
