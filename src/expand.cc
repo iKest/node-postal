@@ -116,12 +116,12 @@ NAN_METHOD(ExpandAddress) {
     }
  
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
-    printf("%zd\n",num_expansions);
+    printf("%zu\n",num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
-        printf("%zd\n",i);
+        printf("%zu\n",i);
         printf(expansions[i]);
-        ret->Set(i, Nan::New(expansions[i]).ToLocalChecked());
+        ret->Set(i, Nan::New<String>(expansions[i].c_str()).ToLocalChecked());
         free(expansions[i]);
     }
     
