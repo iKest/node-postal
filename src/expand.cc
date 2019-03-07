@@ -1,4 +1,4 @@
-#include <libpostal/libpostal.h>
+#include <src/libpostal.h>
 #include <nan.h>
 #include <string.h>
 
