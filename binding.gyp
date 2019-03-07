@@ -6,12 +6,12 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "../src/thrid_party/lib"
+                "../../thrid_party/lib"
                
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                 "src/thrid_party/include"
+                 "../thrid_party/include"
             ]
         },
         {
@@ -20,11 +20,11 @@
                 "src/parser.cc"
             ],
             "libraries": [
-                "../src/thrid_party/lib"
+                "../../thrid_party/lib"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "src/thrid_party/include"
+                "../thrid_party/include"
             ]
         }
     ]
