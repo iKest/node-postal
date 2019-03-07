@@ -6,7 +6,7 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "C:/msys64/home/Konstantin/libpostal/libpostal"
+                "-L C:/msys64/home/Konstantin/libpostal/libpostal"
                
             ],
             "include_dirs": [
@@ -20,7 +20,7 @@
                 "src/parser.cc"
             ],
             "libraries": [
-                "C:/msys64/home/Konstantin/libpostal/libpostal"
+                "-L C:/msys64/home/Konstantin/libpostal/libpostal"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
