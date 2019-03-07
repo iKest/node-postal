@@ -29,7 +29,7 @@ NAN_METHOD(ExpandAddress) {
     char **languages = NULL;
     size_t num_languages = 0;
 
-    uint64_t i, j;
+    uint32_t i, j;
 
     if (info.Length() > 1) {
         v8::Local<v8::Object> props = info[1]->ToObject();
