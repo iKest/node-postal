@@ -1,4 +1,5 @@
 #include <libpostal/libpostal.h>
+#include <node.h>
 #include <nan.h>
 
 #define PARSER_USAGE "Usage: parse_address(address[, options])"
