@@ -11,7 +11,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                 "C:\msys64\home\Konstantin\libpostal\src"
+                 "C:\msys64\home\Konstantin\libpostal"
             ]
         },
         {
@@ -24,7 +24,7 @@
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "C:\msys64\home\Konstantin\libpostal\src"
+                "C:\msys64\home\Konstantin\libpostal"
             ]
         }
     ]
