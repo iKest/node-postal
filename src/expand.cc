@@ -116,16 +116,13 @@ NAN_METHOD(ExpandAddress) {
     }
  
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
-    printf("%zu\n",num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
-        printf("%I32u\n",i);
-        printf(expansions[i]);
+        v8::Local<v8::String> e = Nan::New(expansions[i]).ToLocalChecked();
+        ret->Set(i, e);
         
     }
-    Nan::ThrowError("Could not load libpostal");
-        return;
-    
+   
     free(expansions);
 
     info.GetReturnValue().Set(ret);
