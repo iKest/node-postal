@@ -25,7 +25,7 @@ NAN_METHOD(ParseAddress) {
     char *language = NULL;
     char *country = NULL;
 
-    uint64_t i;
+    uint32_t i;
 
     libpostal_address_parser_options_t options = libpostal_get_address_parser_default_options();
 
