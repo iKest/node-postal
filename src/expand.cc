@@ -133,9 +133,10 @@ static void cleanup(void*) {
     libpostal_teardown_language_classifier();
 }
 
-Nan::ThrowTypeError("11");
+if (NULL == NULL) {
+        Nan::ThrowTypeError("Could not");
         return;
-
+    }
 void init(v8::Local<v8::Object> exports) {
     if (!libpostal_setup() || !libpostal_setup_language_classifier()) {
         Nan::ThrowError("Could not load libpostal");
