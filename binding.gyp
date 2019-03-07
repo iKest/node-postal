@@ -5,7 +5,7 @@
             "sources": [
                 "src/expand.cc"
             ],
-            "libraries": ["C:/msys64/mingw64/lib", "-lpostal"],
+            "libraries": ["-LC:/msys64/mingw64/lib", "-lpostal"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
                  "C:/msys64/mingw64/include"
@@ -16,7 +16,7 @@
             "sources": [
                 "src/parser.cc"
             ],
-            "libraries": ["C:/msys64/mingw64/lib", "-lpostal"],
+            "libraries": ["-LC:/msys64/mingw64/lib", "-lpostal"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
                 "C:/msys64/mingw64/include"
