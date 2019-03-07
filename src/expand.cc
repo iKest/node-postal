@@ -104,8 +104,6 @@ NAN_METHOD(ExpandAddress) {
             }
         }
     }
-Nan::ThrowTypeError("Could not");
-        return;
     options.languages = languages;
     options.num_languages = num_languages;
 
@@ -116,7 +114,8 @@ Nan::ThrowTypeError("Could not");
     if (languages != NULL) {
         free(languages);
     }
-
+    Nan::ThrowTypeError("Could not");
+        return;
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
