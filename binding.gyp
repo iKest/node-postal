@@ -6,12 +6,12 @@
                 "src/expand.cc"
             ],
             "libraries": [
-                "../lib"
+                "-L C:\msys64\home\Konstantin\libpostal\libpostal.lib"
                
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                 "../../../thrid_party/include"
+                 "C:\msys64\home\Konstantin\libpostal\src"
             ]
         },
         {
@@ -20,11 +20,11 @@
                 "src/parser.cc"
             ],
             "libraries": [
-                "../lib"
+                "-L C:\msys64\home\Konstantin\libpostal\libpostal.lib"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "../../../thrid_party/include"
+                "C:\msys64\home\Konstantin\libpostal\src"
             ]
         }
     ]
