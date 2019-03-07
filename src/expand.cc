@@ -33,8 +33,7 @@ NAN_METHOD(ExpandAddress) {
     size_t num_languages = 0;
 
     uint32_t i, j;
-Nan::ThrowTypeError("Could not");
-        return;
+
     if (info.Length() > 1) {
         v8::Local<v8::Object> props = info[1]->ToObject();
 
@@ -105,7 +104,8 @@ Nan::ThrowTypeError("Could not");
             }
         }
     }
-
+Nan::ThrowTypeError("Could not");
+        return;
     options.languages = languages;
     options.num_languages = num_languages;
 
