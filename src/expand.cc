@@ -121,7 +121,7 @@ NAN_METHOD(ExpandAddress) {
     for (i = 0; i < num_expansions; i++) {
         printf("%zu\n",i);
         printf(expansions[i]);
-        ret->Set(i, Nan::New<String>(expansions[i].c_str()).ToLocalChecked());
+        ret->Set(i, Nan::New<String>(expansions[i]).ToLocalChecked());
         free(expansions[i]);
     }
     
