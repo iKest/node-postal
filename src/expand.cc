@@ -118,7 +118,8 @@ NAN_METHOD(ExpandAddress) {
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
-        Nan::ThrowError(expansions[i]);
+        Nan::ThrowErrorNan::New(expansions[i]).ToLocalChecked());
+        return;
         ret->Set(i, Nan::New(expansions[i]).ToLocalChecked());
         free(expansions[i]);
     }
