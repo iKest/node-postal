@@ -1,14 +1,18 @@
 {
+    "variables": {
+        "base_path": "C:\msys64\mingw64"
+    },
     "targets": [
         {
             "target_name": "expand",
             "sources": [
                 "src/expand.cc"
             ],
-            "libraries": ["-LC:/msys64/mingw64/lib", "-llibpostal"],
+            "libraries": ["-llibpostal"],
+            "library_dirs": ["<(base_path)/lib"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                 "C:/msys64/mingw64/include"
+                 "<(base_path)/include"
             ]
         },
         {
@@ -16,10 +20,11 @@
             "sources": [
                 "src/parser.cc"
             ],
-            "libraries": ["-LC:/msys64/mingw64/lib", "-llibpostal"],
+            "libraries": ["-llibpostal"],
+            "library_dirs": ["<(base_path)/lib"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
-                "C:/msys64/mingw64/include"
+                "<(base_path)/include"
             ]
         }
     ]
