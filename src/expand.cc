@@ -116,12 +116,13 @@ NAN_METHOD(ExpandAddress) {
     }
  
     v8::Local<v8::Array> ret = Nan::New<v8::Array>(num_expansions);
-    printf("%I32u\n",num_expansions);
+    printf("%zu\n",num_expansions);
 
     for (i = 0; i < num_expansions; i++) {
         printf("%I32u\n",i);
         printf(expansions[i]);
-        ret->Set(i, Nan::New(expansions[i]));
+        v8::Local<v8::String> e = Nan::New(expansions[i]);
+        ret->Set(i, e);
         free(expansions[i]);
     }
     
