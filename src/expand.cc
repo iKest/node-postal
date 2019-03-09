@@ -106,10 +106,9 @@ NAN_METHOD(ExpandAddress) {
     options.languages = languages;
     options.num_languages = num_languages;
 
-    char **expansions = NULL;
     size_t num_expansions = 0;
 
-    expansions = libpostal_expand_address(address, options, &num_expansions);
+    char **expansions = libpostal_expand_address(address, options, &num_expansions);
 
     if (languages != NULL) {
         free(languages);
@@ -122,6 +121,7 @@ NAN_METHOD(ExpandAddress) {
         ret->Set(i, e);
     }
     
+    libpostal_expansion_array_destroy(expansions, num_expansions);
     
     info.GetReturnValue().Set(ret);
 }
