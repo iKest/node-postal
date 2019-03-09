@@ -1,6 +1,7 @@
 #include <libpostal/libpostal.h>
 #include <node.h>
 #include <string.h>
+#include <stdlib.h>
 #include <nan.h>
 
 using namespace Nan;
@@ -120,6 +121,7 @@ NAN_METHOD(ExpandAddress) {
     for (i = 0; i < num_expansions; i++) {
         v8::Local<v8::String> e = Nan::New<v8::String>(expansions[i]).ToLocalChecked();
         ret->Set(i, e);
+        free(expansions[i]);
     }
     
     info.GetReturnValue().Set(ret);
