@@ -106,7 +106,7 @@ NAN_METHOD(ExpandAddress) {
     options.languages = languages;
     options.num_languages = num_languages;
 
-    char **expansions = NULL
+    char **expansions = NULL;
     size_t num_expansions = 0;
 
     expansions = libpostal_expand_address(address, options, &num_expansions);
