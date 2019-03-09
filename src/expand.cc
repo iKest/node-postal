@@ -119,11 +119,9 @@ NAN_METHOD(ExpandAddress) {
 
     for (i = 0; i < num_expansions; i++) {
         v8::Local<v8::String> e = Nan::New<v8::String>(expansions[i]).ToLocalChecked();
-        printf(expansions[i]);
+        ret->Set(i, e);
     }
-   
-    free(expansions);
-
+    
     info.GetReturnValue().Set(ret);
 }
 
