@@ -8,8 +8,7 @@
             "sources": [
                 "src/expand.cc"
             ],
-            "libraries": ["-llibpostal"],
-            "library_dirs": ["-L<(base_path)/bin"],
+            "libraries": ["<(base_path)/bin/libpostal.lib"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
                  "<(base_path)/include"
