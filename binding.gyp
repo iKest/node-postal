@@ -9,7 +9,7 @@
                 "src/expand.cc"
             ],
             "libraries": ["-llibpostal"],
-            "library_dirs": ["-L<(base_path)/lib"],
+            "library_dirs": ["-L<(base_path)/bin"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
                  "<(base_path)/include"
