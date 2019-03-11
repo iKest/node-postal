@@ -1,6 +1,6 @@
 {
     "variables": {
-        "base_path": "C:\msys64\mingw64"
+        "base_path": "C:/msys64/mingw64"
     },
     "targets": [
         {
