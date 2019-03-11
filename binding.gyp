@@ -8,7 +8,7 @@
             "sources": [
                 "src/expand.cc"
             ],
-            "libraries": ["-llibpostal"],
+            "libraries": ["-llibpostal-1"],
             "library_dirs": ["<(base_path)/bin"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
@@ -20,7 +20,7 @@
             "sources": [
                 "src/parser.cc"
             ],
-            "libraries": ["-llibpostal"],
+            "libraries": ["-llibpostal-1"],
             "library_dirs": ["<(base_path)/bin"],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
